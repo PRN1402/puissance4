@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Puissance 4</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1>Puissance 4
+            <img src="./mockups/puissance4-small.png"/>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Gamers 🧑‍💻</h2>
+            <form id="form-gamer">
+                <div class="form-field">
+                    <label for="gamer-1">Gamer 🔴</label>
+                    <input type="text" name="gamer-1" id="gamer-1" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="gamer-2">Gamer 🟡</label>
+                    <input type="text" name="gamer-2" id="gamer-2" required>
+                </div>
+                <button type="submit">Play! 🔴🟡</button>
+            </form>
+            <p id="p-current-gamer"></p>
+        </section>
+        <section>
+            <h2>The game
+                <img src="./mockups/puissance4-2_transparent.png"/>
+                <button id="btn-new-game">New game!</button>
+            </h2>
+            <table>
+                <thead id="thead-game">
+                    <tr>
+                        <th id="col-1"><button class="btn-col-selected" value="0">1</button></th>
+                        <th id="col-2"><button class="btn-col-selected" value="1">2</button></th>
+                        <th id="col-3"><button class="btn-col-selected" value="2">3</button></th>
+                        <th id="col-4"><button class="btn-col-selected" value="3">4</button></th>
+                        <th id="col-5"><button class="btn-col-selected" value="4">5</button></th>
+                        <th id="col-6"><button class="btn-col-selected" value="5">6</button></th>
+                        <th id="col-7"><button class="btn-col-selected" value="6">7</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-game">
+                    <tr>
+                        <td id="00", class="token">⚪</td>
+                        <td id="01", class="token">⚪</td>
+                        <td id="02", class="token">⚪</td>
+                        <td id="03", class="token">⚪</td>
+                        <td id="04", class="token">⚪</td>
+                        <td id="05", class="token">⚪</td>
+                        <td id="06", class="token">⚪</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <ul class="no-bullets">
+            <li>Developers: Patrick Rabourdin et Daniel Thibaut</li>
+        </ul>
+    </footer>
+
+    <script src="main.mjs" type="module"></script>
+</body>
+
+</html>
