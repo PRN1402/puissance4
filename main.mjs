@@ -1,7 +1,7 @@
 import { Gamer, whiteToken, redToken, yellowToken } from "./modules/gamer.mjs";
 import { newArray, emptyArray, drawRandomFirstGamer, getNextRowEmpty } from "./modules/js-utils.mjs"
 import { displayGameArray } from "./modules/dom-utils.mjs"
-import { Verif } from "./modules/controller.mjs";
+import { verif } from "./modules/controller.mjs";
 
 const nbRows = 6;
 const nbCols = 7;
@@ -65,7 +65,7 @@ document.getElementById('thead-game').addEventListener('click', function (event)
         document.getElementById(cellClassId).textContent = currentGamer.token.emoji;
         gameArray[rowIndex][parseInt(colIndex)] = currentGamer.token; // à commenter
          console.log("currrrrrrrentggggggggggggg  : "+currentGamer.firstName);
-        gagne =Verif(gameArray,gagne);
+        gagne =verif(gameArray,gagne);
         if (gagne)   { document.getElementById('p-current-gamer').textContent = "Player: " + currentGamer.firstName + " " + currentGamer.token.emoji + "win the game!";
         } else {
             currentGamer = (currentGamer === gamer1) ? gamer2 : gamer1;

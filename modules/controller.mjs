@@ -1,5 +1,5 @@
 import { ALIGNR,ALIGNY} from "./gamer.mjs";     
-export function Verif(myTab,gagne){
+export function verif(myTab,gagne){
     
     let i=0;
     let j=0;
